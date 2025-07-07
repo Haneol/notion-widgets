@@ -7,7 +7,7 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
+            padding: 20px;
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
         }
@@ -15,7 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 90px;
+            min-height: 150px;
         }
     </style>
 </head>
@@ -24,6 +24,11 @@
         <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
             <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright">
+                <a href="https://kr.tradingview.com/" rel="noopener nofollow" target="_blank">
+                    <span class="blue-text">트레이딩뷰에서 모든 시장 추적</span>
+                </a>
+            </div>
             <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
             {
                 "symbol": "FX_IDC:USDKRW",
@@ -31,7 +36,7 @@
                 "isTransparent": false,
                 "locale": "kr",
                 "width": 300,
-                "height": 90
+                "height": 100
             }
             </script>
         </div>
